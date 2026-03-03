@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingredient App</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__title">Ingredient App</div>
+        <div class="brand__subtitle">Catalogue data-driven (MTC + nutrition)</div>
+      </div>
+      <div class="topbar__right">
+        <span class="badge" id="buildBadge">data: pack v1</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel panel--left">
+        <div id="filters"></div>
+        <div class="panel__sectionTitle">Catalogue</div>
+        <div id="list" class="list"></div>
+      </aside>
+
+      <section class="panel panel--right">
+        <div id="detail" class="detail">
+          <div class="empty">
+            Sélectionne un ingrédient pour afficher la fiche.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>⚠️ Informations éducatives. Pas un avis médical.</span>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
