@@ -182,7 +182,16 @@ export function renderDetail({ root, entry, index, aliases, onSelect }) {
                 m.how ? el("div", { class: "card__body", text: m.how }) : null,
                 keyValue([
                   ["Dose", m.dose_g ? range(m.dose_g, " g") : "—"],
-                  ["Température", m.water_temp_c ? range(m.water_temp_c, "°C") : m.simmer_temp_c ? range(m.simmer_temp_c, "°C") : "—"],
+                  [
+                    "Température",
+                    m.water_temp_c
+                      ? range(m.water_temp_c, "°C")
+                      : m.liquid_temp_c
+                      ? range(m.liquid_temp_c, "°C")
+                      : m.simmer_temp_c
+                      ? range(m.simmer_temp_c, "°C")
+                      : "—"
+                  ],
                   ["Temps", m.time_minutes ? range(m.time_minutes, " min") : "—"]
                 ]),
                 m.notes?.length ? el("div", {}, el("div", { class: "muted", text: "Notes" }), bulletList(m.notes)) : null,
@@ -191,7 +200,11 @@ export function renderDetail({ root, entry, index, aliases, onSelect }) {
                       "div",
                       {},
                       el("div", { class: "muted", text: "Ajouts compatibles" }),
-                      el("div", { class: "pillRow" }, ...(m.compatible_additions ?? []).map((a) => pill(nameById(a.id, index, aliases), () => onSelect(a.id))))
+                      el(
+                        "div",
+                        { class: "pillRow" },
+                        ...(m.compatible_additions ?? []).map((a) => pill(nameById(a.id, index, aliases), () => onSelect(a.id)))
+                      )
                     )
                   : null
               )
@@ -209,10 +222,15 @@ export function renderDetail({ root, entry, index, aliases, onSelect }) {
         "div",
         { class: "twoCols" },
         el("div", {}, el("h3", { class: "h3", text: "À rechercher" }), bulletList(q.what_to_look_for)),
-        el("div", {}, el("h3", { class: "h3", text: "Stockage" }), keyValue([
-          ["Conserver", safeText(q.storage?.keep)],
-          ["Bonnes pratiques", safeText(q.storage?.best_practice ?? q.storage?.shelf_life_guidance)]
-        ]))
+        el(
+          "div",
+          {},
+          el("h3", { class: "h3", text: "Stockage" }),
+          keyValue([
+            ["Conserver", safeText(q.storage?.keep)],
+            ["Bonnes pratiques", safeText(q.storage?.best_practice ?? q.storage?.shelf_life_guidance)]
+          ])
+        )
       )
     )
   );
@@ -226,7 +244,10 @@ export function renderDetail({ root, entry, index, aliases, onSelect }) {
         "div",
         { class: "twoCols" },
         el("div", {}, el("h3", { class: "h3", text: "Contre-indications (MTC)" }), bulletList(s.contraindications_mtc)),
-        el("div", {}, el("h3", { class: "h3", text: "Interactions / notes" }),
+        el(
+          "div",
+          {},
+          el("h3", { class: "h3", text: "Interactions / notes" }),
           bulletList((s.drug_interactions ?? []).map((x) => `${x.risk ?? "Interaction"} : ${x.note ?? ""}`)),
           s.allergy_notes?.length ? el("div", {}, el("div", { class: "muted", text: "Allergies" }), bulletList(s.allergy_notes)) : null,
           s.pregnancy_and_special_populations ? el("div", {}, el("div", { class: "muted", text: "Populations spécifiques" }), el("div", { text: s.pregnancy_and_special_populations })) : null,
