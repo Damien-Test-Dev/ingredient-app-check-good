@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "locale": "fr-FR",
+  "entry": {
+    "id": "he_shou_wu_prepared",
+    "type": "mtc_materia_medica_placeholder",
+    "display_name": "He Shou Wu préparé (placeholder)",
+    "app_copy": {
+      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents."
+    },
+    "metadata": {
+      "tags": ["placeholder"],
+      "last_updated": "2026-03-03",
+      "confidence_notes": "Placeholder (données non encore ajoutées)."
+    }
+  }
+}
