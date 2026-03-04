@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "locale": "fr-FR",
+  "entry": {
+    "id": "goji_lycium_fruit",
+    "type": "mtc_materia_medica",
+    "display_name": "Baies de goji",
+    "pinyin": "Gou Qi Zi",
+    "chinese": "枸杞子",
+    "latin": "Fructus Lycii (Lycium barbarum / Lycium chinense)",
+    "part_used": "fruit",
+    "forms": ["seche", "fraiche (rare)", "poudre", "extrait (hors MTC classique)"],
+    "mtc_profile": {
+      "nature": "neutre",
+      "flavor": ["doux"],
+      "meridians": ["Foie", "Rein", "Poumon"],
+      "core_actions": [
+        {
+          "action": "Tonifie Foie et Rein, nourrit le Yin",
+          "why_it_matters": "Soutien du 'terrain' en cas de vide (fatigue de fond, sécheresse, récupération lente)."
+        },
+        {
+          "action": "Bénéficie au Jing (essence) / soutient la longévité selon la tradition",
+          "why_it_matters": "Approche préventive et 'capital santé' (logique MTC)."
+        },
+        {
+          "action": "Améliore la vision / nourrit les yeux (Foie)",
+          "why_it_matters": "Sécheresse oculaire, vision fatiguée (profil MTC)."
+        },
+        {
+          "action": "Humidifie le Poumon, génère les liquides",
+          "why_it_matters": "Sécheresse, soif, toux sèche (profil MTC)."
+        }
+      ]
+    },
+    "benefits": {
+      "mtc_benefits": [
+        "Soutien Yin Foie/Rein",
+        "Confort visuel (fatigue/sécheresse oculaire selon MTC)",
+        "Soutien en cas de sécheresse (Poumon/liquides)",
+        "Approche vitalité/récupération (terrain)"
+      ],
+      "nutrition_benefits": [
+        "Apport en antioxydants (caroténoïdes, dont zéaxanthine)",
+        "Fibres (satiété, transit)",
+        "Micronutriments variables selon qualité (ex. fer, vitamine C selon produits)"
+      ]
+    },
+    "effects": {
+      "solo_effects": {
+        "primary": [
+          "Nourrit le Yin Foie/Rein",
+          "Soutient les yeux (fatigue visuelle, sécheresse) - lecture MTC",
+          "Humidifie (sécheresse, soif) - lecture MTC"
+        ],
+        "secondary": [
+          "Soutien récupération / tonicité douce (plutôt progressif que 'coup de boost')"
+        ],
+        "onset": {
+          "felt_quickly": "Variable (souvent discret).",
+          "typical_horizon": "2 a 4 semaines d’usage régulier pour un ressenti plus net (logique 'routine')."
+        }
+      },
+      "blend_effects": [
+        {
+          "blend_id": "goji_longan",
+          "ingredients": [
+            { "id": "goji_lycium_fruit", "role": "nourrit Yin Foie/Rein, yeux" },
+            {
+              "id": "longan_aril",
+              "display_name": "Longan",
+              "pinyin": "Long Yan Rou",
+              "role": "tonifie Sang/Rate, nourrit Coeur, calme le Shen (tradition)"
+            }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Tonification plus 'sang + esprit' (Sang/Coer) avec un fond Yin (Foie/Rein)",
+              "Orientation sommeil/mental (calme du Shen) + récupération"
+            ],
+            "user_facing_summary": "Synergie 'récupération + esprit apaisé' : utile si fatigue + tension mentale + sommeil fragile (profil MTC)."
+          },
+          "best_use_cases": [
+            "Sommeil léger / agitation (profil MTC)",
+            "Fatigue avec palpitations ou esprit dispersé (profil MTC)"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["infusion", "soupe_douce"],
+            "notes": [
+              "Blend plus 'confort' que 'stimulant' : à intégrer le soir ou fin de journée.",
+              "Éviter si sensation de lourdeur digestive marquée (humidité/Rate faible selon MTC)."
+            ]
+          }
+        },
+        {
+          "blend_id": "goji_chrysanthemum",
+          "ingredients": [
+            { "id": "goji_lycium_fruit", "role": "nourrit Foie/Rein, yeux" },
+            {
+              "id": "chrysanthemum_flower",
+              "display_name": "Chrysanthème",
+              "pinyin": "Ju Hua",
+              "role": "clarifie chaleur du Foie, bénéfice aux yeux (tradition)"
+            }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Confort visuel renforcé : nourrit + clarifie",
+              "Utile si yeux rouges/fatigués (profil MTC)"
+            ],
+            "user_facing_summary": "Synergie 'yeux' : nourrit et apaise, souvent utilisée en boisson."
+          },
+          "best_use_cases": [
+            "Fatigue visuelle écran",
+            "Sécheresse oculaire avec chaleur/perception d’irritation (profil MTC)"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["infusion"],
+            "notes": [
+              "Idéal en journée.",
+              "Si vous êtes très frileux/Rate faible, ajuster la fréquence (MTC)."
+            ]
+          }
+        },
+        {
+          "blend_id": "goji_jujube",
+          "ingredients": [
+            { "id": "goji_lycium_fruit", "role": "nourrit Yin, yeux" },
+            {
+              "id": "jujube_red_date",
+              "display_name": "Jujube (datte rouge)",
+              "pinyin": "Da Zao",
+              "role": "tonifie Rate/Qi, nourrit Sang, harmonise (tradition)"
+            }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Base 'tonique doux' : Rate/Qi + Sang avec support Yin",
+              "Meilleure tolérance digestive que goji seul chez certains profils"
+            ],
+            "user_facing_summary": "Synergie 'routine tonique' : énergie stable + soutien digestif (profil MTC)."
+          },
+          "best_use_cases": ["Fatigue de fond", "Récupération", "Routine saison froide"],
+          "preparation_guidance": {
+            "preferred_modes": ["bouillon", "porridge", "infusion"],
+            "notes": ["Très utilisé en cuisine traditionnelle (soupes, bouillies)."]
+          }
+        }
+      ]
+    },
+    "dosage": {
+      "mtc_typical_range_g_per_day": { "min": 6, "max": 12 },
+      "food_use_typical_g_per_day": { "min": 10, "max": 30 },
+      "practical_serving": "1 petite poignee (≈ 20–30 g) en usage alimentaire",
+      "frequency": "Quotidien ou 4–6 jours/semaine (logique de régularité)."
+    },
+    "consumption_and_cooking": {
+      "modes": [
+        {
+          "mode_id": "raw_dried",
+          "display_name": "Crues (seches)",
+          "how": "A manger telles quelles ou ajoutees sur yaourt/porridge/salade.",
+          "pair_with": ["yaourt", "flocons d’avoine", "noix/graines", "salade", "muesli"],
+          "pros": ["Pratique", "Aucun temps de preparation"],
+          "cons": ["Peut etre un peu sec pour certaines personnes"],
+          "notes": ["Bien s’hydrater si consommation importante de fruits secs."]
+        },
+        {
+          "mode_id": "rehydrated",
+          "display_name": "Rehydratees",
+          "how": "Tremper dans de l’eau tiède, puis consommer ou ajouter a un plat.",
+          "water_temp_c": { "min": 40, "max": 60 },
+          "time_minutes": { "min": 5, "max": 10 },
+          "pros": ["Texture plus souple", "Plus facile a digerer pour certains"],
+          "cons": ["Nécessite anticipation minimale"]
+        },
+        {
+          "mode_id": "infusion",
+          "display_name": "Infusion (boisson)",
+          "how": "Verser de l’eau chaude sur les baies, laisser infuser, boire et/ou manger les baies.",
+          "water_temp_c": { "min": 80, "max": 90 },
+          "time_minutes": { "min": 10, "max": 15 },
+          "dose_g": { "min": 6, "max": 12 },
+          "compatible_additions": [
+            { "id": "chrysanthemum_flower", "display_name": "Chrysanthème (Ju Hua)" },
+            { "id": "jujube_red_date", "display_name": "Jujube / datte rouge (Da Zao)" },
+            { "id": "longan_aril", "display_name": "Longan (Long Yan Rou)" }
+          ],
+          "notes": [
+            "Option 'quotidien' : simple, stable, facile a scaler.",
+            "Si objectif 'yeux', associer chrysanthème est courant (tradition)."
+          ]
+        },
+        {
+          "mode_id": "soup_simmer",
+          "display_name": "Cuisine (soupe/bouillon/porridge)",
+          "how": "Ajouter en fin de cuisson ou mijoter doucement selon la recette.",
+          "liquid_temp_c": { "min": 95, "max": 100 },
+          "time_minutes": { "min": 15, "max": 30 },
+          "dose_g": { "min": 6, "max": 15 },
+          "pairs_well_with": ["poulet", "bouillon", "riz (congee)", "jujube", "longan"],
+          "notes": [
+            "Approche très traditionnelle : renforce l’ancrage 'alimentation therapeutique'.",
+            "Pour préserver au mieux certains composants sensibles, preferer ajout en fin de cuisson (pratique culinaire)."
+          ]
+        }
+      ]
+    },
+    "quality_and_selection": {
+      "what_to_look_for": [
+        "Traçabilité claire (origine, lot)",
+        "Contrôles contaminants/résidus si possible",
+        "Couleur uniforme, odeur nette, absence d’humidité"
+      ],
+      "storage": {
+        "keep": "Au sec, à l’abri de la chaleur et de la lumière",
+        "shelf_life_guidance": "Selon emballage; refermer hermétiquement après ouverture."
+      }
+    },
+    "safety": {
+      "contraindications_mtc": [
+        "Humidite interne marquée / diarrhee (profil Rate faible avec humidite)",
+        "Chaleur-humidite (damp-heat) importante (profil MTC)"
+      ],
+      "drug_interactions": [
+        {
+          "risk": "Anticoagulants (ex. warfarine)",
+          "note": "Prudence : possible interaction; valider avec medecin/pharmacien."
+        }
+      ],
+      "allergy_notes": ["Allergies possibles (rares) : arrêter si réaction."],
+      "pregnancy_and_special_populations": [
+        "En cas de grossesse/allaitement ou pathologie chronique: avis pro avant usage régulier."
+      ]
+    },
+    "app_copy": {
+      "one_liner": "Tonique doux MTC : Yin Foie/Rein + confort des yeux, utilisable en routine (infusion, cuisine, snack).",
+      "user_guidance": [
+        "Cherche l’impact via la régularité, pas via la surdose.",
+        "Si tu mixes, vise une intention claire (yeux, sommeil, digestion).",
+        "Sécurité d’abord : interactions médicaments = check obligatoire."
+      ]
+    },
+    "metadata": {
+      "tags": ["yin", "foie", "rein", "yeux", "poumon", "routine", "superfood"],
+      "last_updated": "2026-03-03",
+      "confidence_notes": "Les catégories/actions MTC sont traditionnelles et doivent idéalement être contextualisées par un diagnostic MTC individuel."
+    }
+  }
+}
