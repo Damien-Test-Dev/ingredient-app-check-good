@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "locale": "fr-FR",
+  "ingredients": [
+    {
+      "id": "black_sesame_seed",
+      "display_name": "Graines de sésame noir",
+      "tags": ["jing", "sang", "yin", "foie", "rein", "gros_intestin", "transit", "routine"],
+      "one_liner": "Hei Zhi Ma : tonique doux 'Jing/Sang' + humidifie (transit sec). Le sesame moulu/pate est le format premium pour une routine efficace.",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/black_sesame_seed.json"
+    },
+    {
+      "id": "chrysanthemum_flower",
+      "display_name": "Chrysanthème (placeholder)",
+      "tags": ["placeholder"],
+      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents.",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/chrysanthemum_flower.json"
+    },
+    {
+      "id": "goji_lycium_fruit",
+      "display_name": "Baies de goji",
+      "tags": ["yin", "foie", "rein", "yeux", "poumon", "routine", "superfood"],
+      "one_liner": "Tonique doux MTC : Yin Foie/Rein + confort des yeux, utilisable en routine (infusion, cuisine, snack).",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/goji_lycium_fruit.json"
+    },
+    {
+      "id": "he_shou_wu_prepared",
+      "display_name": "He Shou Wu préparé (placeholder)",
+      "tags": ["placeholder"],
+      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents.",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/he_shou_wu_prepared.json"
+    },
+    {
+      "id": "jujube_red_date",
+      "display_name": "Jujube / datte rouge (placeholder)",
+      "tags": ["placeholder"],
+      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents.",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/jujube_red_date.json"
+    },
+    {
+      "id": "longan_aril",
+      "display_name": "Longane (placeholder)",
+      "tags": ["placeholder"],
+      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents.",
+      "last_updated": "2026-03-03",
+      "file": "ingredients/longan_aril.json"
+    }
+  ]
+}
