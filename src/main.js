@@ -1,4 +1,3 @@
-import "./styles.css";
 import { state } from "./state.js";
 import { getRouteId, navigateToIngredient } from "./router.js";
 import { loadIndex, loadAliases, loadIngredientEntryById } from "./services/dataService.js";
@@ -63,5 +62,5 @@ async function init() {
 
 init().catch((err) => {
   console.error(err);
-  $detail.innerHTML = `<div class="empty">Erreur de chargement. Vérifie /public/data.</div>`;
+  $detail.innerHTML = `<div class="empty">Erreur de chargement. Vérifie les fichiers dans public/data et la console (F12).</div>`;
 });
