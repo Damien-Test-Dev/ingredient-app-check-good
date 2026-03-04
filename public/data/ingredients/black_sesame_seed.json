@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "locale": "fr-FR",
+  "entry": {
+    "id": "black_sesame_seed",
+    "type": "mtc_materia_medica",
+    "display_name": "Graines de sésame noir",
+    "pinyin": "Hei Zhi Ma",
+    "chinese": "黑芝麻",
+    "latin": "Semen Sesami Nigrum (Sesamum indicum)",
+    "part_used": "graine",
+    "forms": ["entiere", "toastee", "moulue (poudre)", "pate (tahini noir)", "bouillie/soupe de sesame (zhi ma hu)"],
+    "mtc_profile": {
+      "nature": "neutre",
+      "flavor": ["doux"],
+      "meridians": ["Foie", "Rein", "Gros Intestin", "Rate (selon écoles)"],
+      "core_actions": [
+        {
+          "action": "Tonifie Foie et Rein, nourrit l’Essence (Jing) et le Sang",
+          "why_it_matters": "Approche 'terrain' : fatigue de fond, sècheresse, cheveux/ongles, récupération (lecture MTC)."
+        },
+        {
+          "action": "Humidifie la sècheresse et lubrifie les intestins",
+          "why_it_matters": "Ciblage 'constipation sèche' / selles dures (lecture MTC)."
+        }
+      ]
+    },
+    "benefits": {
+      "mtc_benefits": [
+        "Soutien Foie/Rein (terrain, vieillissement selon tradition)",
+        "Nourrit Sang/Yin (profil MTC)",
+        "Lubrifie intestins (constipation de type sècheresse)",
+        "Support cheveux/peau (tradition MTC)"
+      ],
+      "nutrition_benefits": [
+        "Lipides insatures + densite calorique (energie stable si dose pilotee)",
+        "Fibres et mineraux (ex. calcium, magnesium, fer selon analyses)",
+        "Lignanes et antioxydants (variable selon qualite/stockage)"
+      ]
+    },
+    "effects": {
+      "solo_effects": {
+        "primary": [
+          "Nourrit Foie/Rein, Essence (Jing) et Sang (MTC)",
+          "Humidifie/lubrifie : soutien du transit quand il est 'sec' (MTC)"
+        ],
+        "secondary": [
+          "Effet 'ancrage' via usage alimentaire regulier (plutot progressif que immediat)"
+        ],
+        "onset": {
+          "felt_quickly": "Souvent digestif (si constipation seche) en quelques jours, sinon discret.",
+          "typical_horizon": "2 a 6 semaines en routine pour effets 'terrain' (logique MTC)."
+        }
+      },
+      "blend_effects": [
+        {
+          "blend_id": "black_sesame_goji",
+          "ingredients": [
+            { "id": "black_sesame_seed", "role": "nourrit Jing/Sang, humidifie" },
+            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "nourrit Yin Foie/Rein, soutien des yeux" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Synergie 'Foie/Rein + Yin/Sang' : base robuste de routine",
+              "Orientation yeux + sècheresse + recuperation"
+            ],
+            "user_facing_summary": "Duo core pour une routine 'terrain' : recuperation + yeux + sècheresse (profil MTC)."
+          },
+          "best_use_cases": ["Fatigue de fond", "Sècheresse", "Vision fatiguee (profil MTC)"],
+          "preparation_guidance": {
+            "preferred_modes": ["congee", "boisson_epaisse (pate diluee)", "snack"],
+            "notes": ["Pour la digestion : sesame plutot moulu/pate que graines entieres."]
+          }
+        },
+        {
+          "blend_id": "black_sesame_jujube_longan_goji",
+          "ingredients": [
+            { "id": "black_sesame_seed", "role": "nourrit Jing/Sang, humidifie" },
+            { "id": "jujube_red_date", "display_name": "Jujube (datte rouge)", "pinyin": "Da Zao", "role": "tonifie Rate/Qi, nourrit Sang, harmonise" },
+            { "id": "longan_aril", "display_name": "Longane", "pinyin": "Long Yan Rou", "role": "nourrit Sang/Coer, calme le Shen (tradition)" },
+            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "nourrit Yin Foie/Rein" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Stack 'Sang + Yin + Shen' : recuperation + apaisement",
+              "Tres nourrissant et plutot doux/sucre : a piloter"
+            ],
+            "user_facing_summary": "Blend 'recup + esprit calme' (profil MTC), ideal en congee ou boisson du soir."
+          },
+          "best_use_cases": ["Sommeil fragile", "Fatigue + charge mentale (profil MTC)"],
+          "risk_flags": ["charge_sucree", "digestif_lourd_si_rate_faible"],
+          "preparation_guidance": {
+            "preferred_modes": ["congee", "decoction_courte + infusion", "bouillon_doux"],
+            "notes": [
+              "Si objectif glycemie/poids : reduire longane/jujube, garder goji + sesame.",
+              "Si lourdeur digestive/selles molles : portion plus petite ou congee plutot que boisson sucree."
+            ]
+          }
+        },
+        {
+          "blend_id": "black_sesame_he_shou_wu",
+          "ingredients": [
+            { "id": "black_sesame_seed", "role": "nourrit Jing/Sang" },
+            { "id": "he_shou_wu_prepared", "display_name": "Fo-ti prepare", "pinyin": "Zhi He Shou Wu", "role": "tonifie Foie/Rein, nourrit Sang/Jing (tradition)" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "Synergie 'cheveux/essence' (tradition)",
+              "Plus 'profonde' et moins 'snack' : a cadrer par praticien"
+            ],
+            "user_facing_summary": "Combo traditionnel 'Jing + Sang' (cheveux/terrain). A reserver a un cadre pro si usage regulier."
+          },
+          "best_use_cases": ["Terrain Foie/Rein vide (profil MTC)"],
+          "risk_flags": ["usage_herboristerie_a_encadrer"]
+        }
+      ]
+    },
+    "dosage": {
+      "mtc_typical_range_g_per_day": { "min": 9, "max": 15 },
+      "food_use_typical_g_per_day": { "min": 10, "max": 30 },
+      "practical_serving": "1 c. a soupe (≈ 10–15 g) en routine; jusqu’a 2 c. a soupe selon objectif/recette",
+      "frequency": "Quotidien ou 4–6 jours/semaine (regularite > intensite)."
+    },
+    "consumption_and_cooking": {
+      "golden_rules": [
+        "Moulu/pate = meilleure digestibilite et experience produit.",
+        "Toaster = arôme + reduction de l’humidite, mais ne pas bruler (rancissement).",
+        "Stockage au frais pour proteger les huiles."
+      ],
+      "modes": [
+        {
+          "mode_id": "toasted_whole_topping",
+          "display_name": "Toastees, entieres (topping)",
+          "how": "Toaster a sec puis saupoudrer sur plats/bols.",
+          "stovetop": {
+            "heat": "feu moyen-doux",
+            "time_minutes": { "min": 3, "max": 5 },
+            "stirring": "remuer souvent jusqu’a odeur de noisette (sans fumer)"
+          },
+          "oven": {
+            "temp_c": { "min": 175, "max": 175 },
+            "time_minutes": { "min": 8, "max": 10 },
+            "stir_every_minutes": 2
+          },
+          "pair_with": ["riz", "nouilles", "salades", "legumes", "congee"],
+          "notes": ["Transvaser hors de la poele/plaque pour stopper la cuisson (eviter amertume)."]
+        },
+        {
+          "mode_id": "ground_powder",
+          "display_name": "Moulues (poudre)",
+          "how": "Moudre apres toastage leger ou utiliser une poudre prete. Ajouter a congee, yaourt, smoothies, sauces.",
+          "dose_g": { "min": 10, "max": 20 },
+          "pair_with": ["congee", "porridge", "yaourt", "smoothie", "pates a gateau"],
+          "pros": ["Meilleure digestion", "Texture premium"],
+          "cons": ["S’oxyde plus vite : stockage rigoureux"]
+        },
+        {
+          "mode_id": "paste_drink",
+          "display_name": "Pate (boisson epaisse)",
+          "how": "Diluer 1–2 c. a soupe de pate ou poudre dans eau chaude, fouetter, boire.",
+          "water_temp_c": { "min": 80, "max": 90 },
+          "time_minutes": { "min": 2, "max": 5 },
+          "dose_g": { "min": 10, "max": 20 },
+          "compatible_additions": [
+            { "id": "goji_lycium_fruit", "display_name": "Goji (Gou Qi Zi)" },
+            { "id": "jujube_red_date", "display_name": "Jujube (Da Zao)" },
+            { "id": "longan_aril", "display_name": "Longane (Long Yan Rou)" }
+          ],
+          "notes": ["Mode 'app-friendly' : rapide, repetable, tres bon levier routine."]
+        },
+        {
+          "mode_id": "congee",
+          "display_name": "Congee / porridge",
+          "how": "Cuire riz + eau. Ajouter jujube/longane en fin, goji a toute fin. Ajouter sesame moulu au service.",
+          "simmer_temp_c": { "min": 95, "max": 100 },
+          "time_minutes": { "min": 40, "max": 60 },
+          "dose_g": { "min": 10, "max": 30 },
+          "notes": ["Format traditionnel, haute adherence, ideal en saison froide."]
+        }
+      ]
+    },
+    "quality_and_selection": {
+      "what_to_look_for": [
+        "Odeur fraiche (pas rance)",
+        "Graines seches, propres, sans humidite",
+        "Rotation de stock (date recente), idealement bio/trace"
+      ],
+      "storage": {
+        "keep": "Hermetique, au frais et a l’abri de la lumiere",
+        "best_practice": "Refrigeration recommande si grandes quantites (huiles sensibles)."
+      }
+    },
+    "safety": {
+      "contraindications_mtc": [
+        "Diarrhee / selles molles (vide de Rate) : a eviter ou reduire (MTC)",
+        "Prudence si 'chaleur montante' / douleur dentaire (mentionnee par certaines sources MTC)"
+      ],
+      "drug_interactions": [
+        {
+          "risk": "Warfarine / anticoagulants (logique vitamine K)",
+          "note": "Objectif: stabilite. Eviter les variations brutales d’apports alimentaires riches en vitamine K; valider avec le suivi medical."
+        }
+      ],
+      "allergy_notes": [
+        "Allergie au sesame possible et en hausse : arret immediat si symptomes."
+      ],
+      "metabolic_notes": [
+        "Tres calorique : piloter les portions, surtout si recettes sucrees (zhi ma hu, longane/jujube)."
+      ]
+    },
+    "app_copy": {
+      "one_liner": "Hei Zhi Ma : tonique doux 'Jing/Sang' + humidifie (transit sec). Le sesame moulu/pate est le format premium pour une routine efficace.",
+      "user_guidance": [
+        "Pour un impact, standardiser la dose et le mode (pate/ poudre).",
+        "Si objectif sommeil/recup : stack sesame + goji + longane + jujube en congee du soir.",
+        "Si digestif fragile : commencer bas, preferer congee et reduire le sucre."
+      ]
+    },
+    "metadata": {
+      "tags": ["jing", "sang", "yin", "foie", "rein", "gros_intestin", "transit", "routine"],
+      "related_entries": ["goji_lycium_fruit", "jujube_red_date", "longan_aril"],
+      "last_updated": "2026-03-03",
+      "confidence_notes": "Les actions MTC sont traditionnelles; l’orientation finale depend du pattern individuel."
+    }
+  }
+}
