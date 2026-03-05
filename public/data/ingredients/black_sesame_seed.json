@@ -9,7 +9,13 @@
     "chinese": "黑芝麻",
     "latin": "Semen Sesami Nigrum (Sesamum indicum)",
     "part_used": "graine",
-    "forms": ["entiere", "toastee", "moulue (poudre)", "pate (tahini noir)", "bouillie/soupe de sesame (zhi ma hu)"],
+    "forms": [
+      "entiere",
+      "toastee",
+      "moulue (poudre)",
+      "pate (tahini noir)",
+      "bouillie/soupe de sesame (zhi ma hu)"
+    ],
     "mtc_profile": {
       "nature": "neutre",
       "flavor": ["doux"],
@@ -57,7 +63,12 @@
           "blend_id": "black_sesame_goji",
           "ingredients": [
             { "id": "black_sesame_seed", "role": "nourrit Jing/Sang, humidifie" },
-            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "nourrit Yin Foie/Rein, soutien des yeux" }
+            {
+              "id": "goji_lycium_fruit",
+              "display_name": "Baies de goji",
+              "pinyin": "Gou Qi Zi",
+              "role": "nourrit Yin Foie/Rein, soutien des yeux"
+            }
           ],
           "combined_effects": {
             "mtc": [
@@ -76,9 +87,24 @@
           "blend_id": "black_sesame_jujube_longan_goji",
           "ingredients": [
             { "id": "black_sesame_seed", "role": "nourrit Jing/Sang, humidifie" },
-            { "id": "jujube_red_date", "display_name": "Jujube (datte rouge)", "pinyin": "Da Zao", "role": "tonifie Rate/Qi, nourrit Sang, harmonise" },
-            { "id": "longan_aril", "display_name": "Longane", "pinyin": "Long Yan Rou", "role": "nourrit Sang/Coer, calme le Shen (tradition)" },
-            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "nourrit Yin Foie/Rein" }
+            {
+              "id": "jujube_red_date",
+              "display_name": "Jujube (datte rouge)",
+              "pinyin": "Da Zao",
+              "role": "tonifie Rate/Qi, nourrit Sang, harmonise"
+            },
+            {
+              "id": "longan_aril",
+              "display_name": "Longane",
+              "pinyin": "Long Yan Rou",
+              "role": "nourrit Sang/Coer, calme le Shen (tradition)"
+            },
+            {
+              "id": "goji_lycium_fruit",
+              "display_name": "Baies de goji",
+              "pinyin": "Gou Qi Zi",
+              "role": "nourrit Yin Foie/Rein"
+            }
           ],
           "combined_effects": {
             "mtc": [
@@ -101,7 +127,12 @@
           "blend_id": "black_sesame_he_shou_wu",
           "ingredients": [
             { "id": "black_sesame_seed", "role": "nourrit Jing/Sang" },
-            { "id": "he_shou_wu_prepared", "display_name": "Fo-ti prepare", "pinyin": "Zhi He Shou Wu", "role": "tonifie Foie/Rein, nourrit Sang/Jing (tradition)" }
+            {
+              "id": "he_shou_wu_prepared",
+              "display_name": "Fo-ti prepare",
+              "pinyin": "Zhi He Shou Wu",
+              "role": "tonifie Foie/Rein, nourrit Sang/Jing (tradition)"
+            }
           ],
           "combined_effects": {
             "mtc": [
@@ -201,9 +232,7 @@
           "note": "Objectif: stabilite. Eviter les variations brutales d’apports alimentaires riches en vitamine K; valider avec le suivi medical."
         }
       ],
-      "allergy_notes": [
-        "Allergie au sesame possible et en hausse : arret immediat si symptomes."
-      ],
+      "allergy_notes": ["Allergie au sesame possible et en hausse : arret immediat si symptomes."],
       "metabolic_notes": [
         "Tres calorique : piloter les portions, surtout si recettes sucrees (zhi ma hu, longane/jujube)."
       ]
