@@ -3,15 +3,165 @@
   "locale": "fr-FR",
   "entry": {
     "id": "chrysanthemum_flower",
-    "type": "mtc_materia_medica_placeholder",
-    "display_name": "Chrysanthème (placeholder)",
-    "app_copy": {
-      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents."
+    "type": "mtc_materia_medica",
+    "display_name": "Chrysanthème",
+    "pinyin": "Ju Hua",
+    "chinese": "菊花",
+    "latin": "Flos Chrysanthemi (Chrysanthemum morifolium)",
+    "part_used": "fleur",
+    "forms": [
+      "fleurs séchées",
+      "infusion",
+      "mélange (tisane)",
+      "extrait (hors MTC classique)"
+    ],
+
+    "mtc_profile": {
+      "nature": "à compléter",
+      "flavor": ["à compléter"],
+      "meridians": ["à compléter"],
+      "core_actions": [
+        {
+          "action": "À compléter",
+          "why_it_matters": "À compléter (en une phrase orientée usage)."
+        }
+      ]
     },
+
+    "benefits": {
+      "mtc_benefits": [
+        "À compléter (liste courte orientée usage)"
+      ],
+      "nutrition_benefits": [
+        "À compléter (si pertinent selon le format consommé)"
+      ]
+    },
+
+    "effects": {
+      "solo_effects": {
+        "primary": [
+          "À compléter"
+        ],
+        "secondary": [
+          "À compléter"
+        ],
+        "onset": {
+          "felt_quickly": "À compléter",
+          "typical_horizon": "À compléter"
+        }
+      },
+
+      "blend_effects": [
+        {
+          "blend_id": "chrysanthemum_goji",
+          "ingredients": [
+            {
+              "id": "chrysanthemum_flower",
+              "role": "À compléter"
+            },
+            {
+              "id": "goji_lycium_fruit",
+              "display_name": "Baies de goji",
+              "pinyin": "Gou Qi Zi",
+              "role": "À compléter"
+            }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "À compléter"
+            ],
+            "user_facing_summary": "Synergie 'yeux' (structure prête) : compléter le résumé."
+          },
+          "best_use_cases": [
+            "À compléter"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["infusion"],
+            "notes": [
+              "À compléter"
+            ]
+          }
+        }
+      ]
+    },
+
+    "dosage": {
+      "mtc_typical_range_g_per_day": { "min": 0, "max": 0 },
+      "food_use_typical_g_per_day": { "min": 0, "max": 0 },
+      "practical_serving": "À compléter (ex: g par infusion / tasses/jour).",
+      "frequency": "À compléter (ponctuel / quotidien / 4–6j/semaine)."
+    },
+
+    "consumption_and_cooking": {
+      "golden_rules": [
+        "À compléter (ex: qualité, infusion douce, éviter surdosage, etc.)."
+      ],
+      "modes": [
+        {
+          "mode_id": "infusion",
+          "display_name": "Infusion",
+          "how": "À compléter (procédé simple : eau chaude + infusion).",
+          "water_temp_c": { "min": 80, "max": 90 },
+          "time_minutes": { "min": 5, "max": 12 },
+          "dose_g": { "min": 0, "max": 0 },
+          "compatible_additions": [
+            { "id": "goji_lycium_fruit", "display_name": "Goji (Gou Qi Zi)" }
+          ],
+          "notes": [
+            "À compléter"
+          ]
+        }
+      ]
+    },
+
+    "quality_and_selection": {
+      "what_to_look_for": [
+        "À compléter (fleurs intactes, odeur, absence d’humidité, traçabilité, etc.)"
+      ],
+      "storage": {
+        "keep": "À compléter (sec, hermétique, à l’abri de la lumière).",
+        "best_practice": "À compléter (rotation, éviter humidité)."
+      }
+    },
+
+    "safety": {
+      "critical_warnings": [],
+      "contraindications_mtc": [
+        "À compléter (si applicable)"
+      ],
+      "drug_interactions": [
+        {
+          "risk": "À compléter",
+          "note": "À compléter"
+        }
+      ],
+      "allergy_notes": [
+        "À compléter (réactions possibles chez personnes sensibles aux Astéracées, si pertinent)."
+      ],
+      "pregnancy_and_special_populations": "À compléter (prudence si besoin).",
+      "metabolic_notes": "À compléter"
+    },
+
+    "app_copy": {
+      "one_liner": "Ju Hua : fiche en cours d’enrichissement. Structure prête, contenu à compléter.",
+      "user_guidance": [
+        "À compléter (ex: objectif clair, routine simple, prudence)."
+      ]
+    },
+
+    "sources": [
+      {
+        "type": "note",
+        "label": "À compléter",
+        "note": "Ajoute ici tes sources (ouvrages MTC, pharmacopées, etc.)."
+      }
+    ],
+
     "metadata": {
-      "tags": ["placeholder"],
-      "last_updated": "2026-03-03",
-      "confidence_notes": "Placeholder (données non encore ajoutées)."
+      "tags": ["placeholder", "a_completer", "yeux"],
+      "related_entries": ["goji_lycium_fruit"],
+      "last_updated": "2026-03-07",
+      "confidence_notes": "Structure prête. Contenu à compléter avec des sources et validation métier."
     }
   }
 }
