@@ -3,15 +3,204 @@
   "locale": "fr-FR",
   "entry": {
     "id": "jujube_red_date",
-    "type": "mtc_materia_medica_placeholder",
-    "display_name": "Jujube / datte rouge (placeholder)",
-    "app_copy": {
-      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents."
+    "type": "mtc_materia_medica",
+    "display_name": "Jujube (datte rouge)",
+    "pinyin": "Da Zao",
+    "chinese": "大枣",
+    "latin": "Fructus Jujubae (Ziziphus jujuba)",
+    "part_used": "fruit",
+    "forms": [
+      "sec (datte rouge)",
+      "infusion",
+      "decoction douce",
+      "congee/porridge",
+      "cuisine (soupe/bouillon)"
+    ],
+
+    "mtc_profile": {
+      "nature": "à compléter",
+      "flavor": ["à compléter"],
+      "meridians": ["à compléter"],
+      "core_actions": [
+        {
+          "action": "À compléter",
+          "why_it_matters": "À compléter (formulation orientée utilisateur : pourquoi c’est utile dans une routine)."
+        }
+      ]
     },
+
+    "benefits": {
+      "mtc_benefits": [
+        "À compléter"
+      ],
+      "nutrition_benefits": [
+        "À compléter (ex: glucides/sucre, fibres, etc. si pertinent)."
+      ]
+    },
+
+    "effects": {
+      "solo_effects": {
+        "primary": [
+          "À compléter"
+        ],
+        "secondary": [
+          "À compléter"
+        ],
+        "onset": {
+          "felt_quickly": "À compléter",
+          "typical_horizon": "À compléter"
+        }
+      },
+
+      "blend_effects": [
+        {
+          "blend_id": "jujube_goji",
+          "ingredients": [
+            { "id": "jujube_red_date", "role": "À compléter" },
+            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "À compléter" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "À compléter"
+            ],
+            "user_facing_summary": "Synergie 'routine tonique' (structure prête) : compléter le résumé."
+          },
+          "best_use_cases": [
+            "À compléter"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["bouillon", "porridge", "infusion", "congee"],
+            "notes": [
+              "À compléter"
+            ]
+          }
+        },
+        {
+          "blend_id": "jujube_longan_goji",
+          "ingredients": [
+            { "id": "jujube_red_date", "role": "À compléter" },
+            { "id": "longan_aril", "display_name": "Longane", "pinyin": "Long Yan Rou", "role": "À compléter" },
+            { "id": "goji_lycium_fruit", "display_name": "Baies de goji", "pinyin": "Gou Qi Zi", "role": "À compléter" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "À compléter"
+            ],
+            "user_facing_summary": "Blend 'récup + esprit calme' (structure prête) : compléter le résumé."
+          },
+          "best_use_cases": [
+            "À compléter"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["congee", "soupe_douce"],
+            "notes": [
+              "À compléter"
+            ]
+          }
+        }
+      ]
+    },
+
+    "dosage": {
+      "mtc_typical_range_g_per_day": { "min": 0, "max": 0 },
+      "food_use_typical_g_per_day": { "min": 0, "max": 0 },
+      "practical_serving": "À compléter (portion pratique en cuisine / infusion).",
+      "frequency": "À compléter (quotidien / 4–6 jours/semaine / ponctuel)."
+    },
+
+    "consumption_and_cooking": {
+      "golden_rules": [
+        "À compléter (ex: piloter le sucre, usage en routine, etc.)."
+      ],
+      "modes": [
+        {
+          "mode_id": "infusion",
+          "display_name": "Infusion",
+          "how": "À compléter (eau chaude + infusion).",
+          "water_temp_c": { "min": 85, "max": 95 },
+          "time_minutes": { "min": 10, "max": 20 },
+          "dose_g": { "min": 0, "max": 0 },
+          "compatible_additions": [
+            { "id": "goji_lycium_fruit", "display_name": "Goji (Gou Qi Zi)" },
+            { "id": "longan_aril", "display_name": "Longane (Long Yan Rou)" }
+          ],
+          "notes": [
+            "À compléter"
+          ]
+        },
+        {
+          "mode_id": "congee",
+          "display_name": "Congee / porridge",
+          "how": "À compléter (ajout en cuisson douce).",
+          "simmer_temp_c": { "min": 95, "max": 100 },
+          "time_minutes": { "min": 40, "max": 60 },
+          "dose_g": { "min": 0, "max": 0 },
+          "notes": [
+            "À compléter"
+          ]
+        },
+        {
+          "mode_id": "bouillon",
+          "display_name": "Cuisine (bouillon/soupe)",
+          "how": "À compléter (ajout en décoction douce / cuisson).",
+          "liquid_temp_c": { "min": 95, "max": 100 },
+          "time_minutes": { "min": 20, "max": 45 },
+          "dose_g": { "min": 0, "max": 0 },
+          "notes": [
+            "À compléter"
+          ]
+        }
+      ]
+    },
+
+    "quality_and_selection": {
+      "what_to_look_for": [
+        "À compléter (qualité, texture, absence moisissures, traçabilité)."
+      ],
+      "storage": {
+        "keep": "À compléter (sec, hermétique, à l’abri de la lumière).",
+        "best_practice": "À compléter (rotation, éviter humidité)."
+      }
+    },
+
+    "safety": {
+      "critical_warnings": [],
+      "contraindications_mtc": [
+        "À compléter (si applicable)"
+      ],
+      "drug_interactions": [
+        {
+          "risk": "À compléter",
+          "note": "À compléter"
+        }
+      ],
+      "allergy_notes": [
+        "À compléter"
+      ],
+      "pregnancy_and_special_populations": "À compléter (prudence si besoin).",
+      "metabolic_notes": "À compléter (ex: charge sucrée si pertinent)."
+    },
+
+    "app_copy": {
+      "one_liner": "Da Zao : fiche en cours d’enrichissement. Structure prête, contenu à compléter.",
+      "user_guidance": [
+        "À compléter (guidelines d’usage simple et responsable)."
+      ]
+    },
+
+    "sources": [
+      {
+        "type": "note",
+        "label": "À compléter",
+        "note": "Ajoute ici tes sources (ouvrages MTC, pharmacopées, etc.)."
+      }
+    ],
+
     "metadata": {
-      "tags": ["placeholder"],
-      "last_updated": "2026-03-03",
-      "confidence_notes": "Placeholder (données non encore ajoutées)."
+      "tags": ["placeholder", "a_completer", "routine"],
+      "related_entries": ["goji_lycium_fruit", "longan_aril", "black_sesame_seed"],
+      "last_updated": "2026-03-07",
+      "confidence_notes": "Structure prête. Contenu à compléter avec des sources et validation métier."
     }
   }
 }
