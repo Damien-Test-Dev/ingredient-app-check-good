@@ -3,15 +3,162 @@
   "locale": "fr-FR",
   "entry": {
     "id": "he_shou_wu_prepared",
-    "type": "mtc_materia_medica_placeholder",
-    "display_name": "He Shou Wu préparé (placeholder)",
-    "app_copy": {
-      "one_liner": "Contenu à venir. Cette fiche est un placeholder pour garder les liens et la validation cohérents."
+    "type": "mtc_materia_medica",
+    "display_name": "He Shou Wu préparé (Fo-ti préparé)",
+    "pinyin": "Zhi He Shou Wu",
+    "chinese": "制何首乌",
+    "latin": "Radix Polygoni Multiflori Praeparata (Polygonum multiflorum)",
+    "part_used": "racine (préparée)",
+    "forms": [
+      "tranches préparées",
+      "poudre",
+      "décoction",
+      "formules (usage encadré)"
+    ],
+
+    "mtc_profile": {
+      "nature": "à compléter",
+      "flavor": ["à compléter"],
+      "meridians": ["à compléter"],
+      "core_actions": [
+        {
+          "action": "À compléter",
+          "why_it_matters": "À compléter (formulation orientée utilisateur : pourquoi, quand, pour quel profil)."
+        }
+      ]
     },
+
+    "benefits": {
+      "mtc_benefits": [
+        "À compléter"
+      ],
+      "nutrition_benefits": [
+        "À compléter (si pertinent selon le format)."
+      ]
+    },
+
+    "effects": {
+      "solo_effects": {
+        "primary": [
+          "À compléter"
+        ],
+        "secondary": [
+          "À compléter"
+        ],
+        "onset": {
+          "felt_quickly": "À compléter",
+          "typical_horizon": "À compléter"
+        }
+      },
+
+      "blend_effects": [
+        {
+          "blend_id": "he_shou_wu_black_sesame",
+          "ingredients": [
+            { "id": "he_shou_wu_prepared", "role": "À compléter" },
+            { "id": "black_sesame_seed", "display_name": "Graines de sésame noir", "pinyin": "Hei Zhi Ma", "role": "À compléter" }
+          ],
+          "combined_effects": {
+            "mtc": [
+              "À compléter"
+            ],
+            "user_facing_summary": "Combo traditionnel 'Jing + Sang' (structure prête) : compléter le résumé."
+          },
+          "best_use_cases": [
+            "À compléter"
+          ],
+          "risk_flags": [
+            "usage_herboristerie_a_encadrer"
+          ],
+          "preparation_guidance": {
+            "preferred_modes": ["décoction", "formule encadrée"],
+            "notes": [
+              "Usage recommandé dans un cadre pro / suivi."
+            ]
+          }
+        }
+      ]
+    },
+
+    "dosage": {
+      "mtc_typical_range_g_per_day": { "min": 0, "max": 0 },
+      "food_use_typical_g_per_day": { "min": 0, "max": 0 },
+      "practical_serving": "À compléter (dosage et forme selon encadrement).",
+      "frequency": "À compléter (cure / protocole encadré)."
+    },
+
+    "consumption_and_cooking": {
+      "golden_rules": [
+        "Usage à cadrer (forme préparée, qualité, traçabilité).",
+        "Ne pas improviser en routine si profil à risque / médication."
+      ],
+      "modes": [
+        {
+          "mode_id": "decoction",
+          "display_name": "Décoction",
+          "how": "À compléter (procédure + timing).",
+          "liquid_temp_c": { "min": 95, "max": 100 },
+          "time_minutes": { "min": 20, "max": 40 },
+          "dose_g": { "min": 0, "max": 0 },
+          "notes": [
+            "À compléter (ex: encadrement recommandé)."
+          ]
+        }
+      ]
+    },
+
+    "quality_and_selection": {
+      "what_to_look_for": [
+        "Traçabilité / lot / tests contaminants",
+        "Préparation correcte (Zhi) selon filière fiable",
+        "Source fournisseur de confiance"
+      ],
+      "storage": {
+        "keep": "Sec, hermétique, à l’abri de la chaleur et de la lumière.",
+        "best_practice": "Documentation fournisseur + respect des dates (qualité)."
+      }
+    },
+
+    "safety": {
+      "critical_warnings": [
+        "À compléter (si tu as des alertes critiques documentées, mets-les ici)."
+      ],
+      "contraindications_mtc": [
+        "À compléter (si applicable)"
+      ],
+      "drug_interactions": [
+        {
+          "risk": "À compléter",
+          "note": "À compléter"
+        }
+      ],
+      "allergy_notes": [
+        "À compléter"
+      ],
+      "pregnancy_and_special_populations": "À compléter (prudence + avis pro).",
+      "metabolic_notes": "À compléter"
+    },
+
+    "app_copy": {
+      "one_liner": "Zhi He Shou Wu : fiche en cours d’enrichissement. Usage plutôt encadré — structure prête, contenu à compléter avec sources.",
+      "user_guidance": [
+        "À compléter (ex: encadrement, qualité, éviter l’auto-protocole)."
+      ]
+    },
+
+    "sources": [
+      {
+        "type": "note",
+        "label": "À compléter",
+        "note": "Ajoute ici tes sources (pharmacopée, ouvrages, études, etc.)."
+      }
+    ],
+
     "metadata": {
-      "tags": ["placeholder"],
-      "last_updated": "2026-03-03",
-      "confidence_notes": "Placeholder (données non encore ajoutées)."
+      "tags": ["placeholder", "a_completer", "encadrement"],
+      "related_entries": ["black_sesame_seed"],
+      "last_updated": "2026-03-07",
+      "confidence_notes": "Structure prête. Contenu à compléter avec sources et validation métier."
     }
   }
 }
