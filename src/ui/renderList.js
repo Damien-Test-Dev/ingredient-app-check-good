@@ -1,9 +1,21 @@
 import { el, clear } from "../utils/dom.js";
 
+const INTERNAL_TAGS = new Set(["placeholder", "a_completer", "encadrement"]);
+
 function matches(item, q) {
   if (!q) return true;
   const hay = `${item.display_name ?? ""} ${(item.tags ?? []).join(" ")}`.toLowerCase();
   return hay.includes(q.toLowerCase());
+}
+
+function visibleTags(tags) {
+  return (tags ?? []).filter((t) => !INTERNAL_TAGS.has(t));
+}
+
+function isDraft(tags) {
+  // Si la fiche n’a que des tags internes, on la considère "à venir"
+  const vt = visibleTags(tags);
+  return vt.length === 0;
 }
 
 export function renderList({ root, state, onSelect }) {
@@ -19,6 +31,14 @@ export function renderList({ root, state, onSelect }) {
   }
 
   for (const item of filtered) {
+    const vt = visibleTags(item.tags);
+    const draft = isDraft(item.tags);
+
+    const chips =
+      vt.length > 0
+        ? vt.slice(0, 6).map((t) => el("span", { class: "chip", text: t }))
+        : [el("span", { class: "chip", text: "À venir" })];
+
     root.appendChild(
       el(
         "button",
@@ -29,7 +49,7 @@ export function renderList({ root, state, onSelect }) {
         },
         el("div", { class: "listItem__title", text: item.display_name }),
         el("div", { class: "listItem__meta", text: item.one_liner ?? "" }),
-        el("div", { class: "chips" }, ...((item.tags ?? []).slice(0, 6).map((t) => el("span", { class: "chip", text: t }))))
+        el("div", { class: "chips" }, ...chips)
       )
     );
   }
