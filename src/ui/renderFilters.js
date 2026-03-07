@@ -19,7 +19,6 @@ function formatTagLabel(tag) {
 
   if (map[tag]) return map[tag];
 
-  // Fallback lisible : "gros_intestin" -> "Gros intestin"
   const pretty = String(tag).replace(/_/g, " ").trim();
   return pretty.charAt(0).toUpperCase() + pretty.slice(1);
 }
@@ -40,7 +39,6 @@ function collectTagsWithCounts(index) {
     count
   }));
 
-  // Tri par label (UX)
   tags.sort((a, b) => a.label.localeCompare(b.label, "fr"));
   return tags;
 }
@@ -69,7 +67,8 @@ export function renderFilters({ root, state, onChange }) {
     }
   });
 
-  select.appendChild(el("option", { value: "all", text: "Tous les tags" }));
+  // ✅ Changement : plus clair pour l’end user
+  select.appendChild(el("option", { value: "all", text: "Tous les ingrédients" }));
 
   for (const t of tags) {
     select.appendChild(
@@ -81,12 +80,12 @@ export function renderFilters({ root, state, onChange }) {
     );
   }
 
-  root.appendChild(
-    el(
-      "div",
-      { class: "filters" },
-      el("div", { class: "filters__row" }, el("div", { class: "label", text: "Recherche" }), search),
-      el("div", { class: "filters__row" }, el("div", { class: "label", text: "Tag" }), select)
-    )
+  const wrap = el(
+    "div",
+    { class: "filters" },
+    el("div", { class: "filters__row" }, el("div", { class: "label", text: "Recherche" }), search),
+    el("div", { class: "filters__row" }, el("div", { class: "label", text: "Tag" }), select)
   );
+
+  root.appendChild(wrap);
 }
