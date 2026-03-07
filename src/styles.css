@@ -1,148 +1,48 @@
-:root {
-  --bg: #0b0c10;
-  --panel: #11131a;
-  --panel2: #141827;
-  --text: #e8eaf2;
-  --muted: #a2a8c3;
-  --line: rgba(255,255,255,0.08);
-  --accent: #7aa2ff;
+/* =========================
+   Select dropdown UX (A11Y)
+   ========================= */
 
-  --r: 16px;
-  --shadow: 0 8px 30px rgba(0,0,0,0.35);
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-}
-
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); }
-
-.topbar {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 14px 18px; border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(122,162,255,0.08), transparent);
-}
-
-.brand__title { font-weight: 800; letter-spacing: 0.2px; }
-.brand__subtitle { color: var(--muted); font-size: 12px; margin-top: 2px; }
-
-.badge {
-  padding: 6px 10px; border: 1px solid var(--line);
-  border-radius: 999px; font-size: 12px; color: var(--muted);
-}
-
-.layout {
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 14px;
-  padding: 14px;
-  min-height: calc(100vh - 110px);
-}
-
-.panel {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.panel--left { display: flex; flex-direction: column; }
-.panel--right { background: var(--panel2); }
-
-.panel__sectionTitle {
-  padding: 10px 14px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  font-size: 12px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-}
-
-.filters { padding: 12px 14px; border-bottom: 1px solid var(--line); }
-.filters__row { display: grid; grid-template-columns: 90px 1fr; gap: 10px; align-items: center; margin-bottom: 10px; }
-.label { color: var(--muted); font-size: 12px; }
-
-.input, .select {
-  width: 100%;
-  padding: 10px 10px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
+/* Force un rendu dark cohérent même quand le navigateur ouvre un menu natif clair */
+.select {
+  color-scheme: dark; /* aide Chrome/Edge à ouvrir un dropdown sombre */
+  background: rgba(255,255,255,0.06);
   color: var(--text);
+  border: 1px solid var(--line);
+}
+
+/* Hover / focus : signal clair “cliquable” */
+.select:hover {
+  border-color: rgba(122,162,255,0.45);
+}
+
+.select:focus {
   outline: none;
-}
-.input:focus, .select:focus { border-color: rgba(122,162,255,0.6); }
-
-.list { padding: 10px; display: grid; gap: 10px; overflow: auto; }
-.listItem {
-  text-align: left;
-  border-radius: 14px;
-  padding: 12px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  cursor: pointer;
-}
-.listItem:hover { border-color: rgba(122,162,255,0.35); }
-.listItem--active { border-color: rgba(122,162,255,0.75); background: rgba(122,162,255,0.10); }
-
-.listItem__title { font-weight: 750; margin-bottom: 6px; }
-.listItem__meta { color: var(--muted); font-size: 12px; line-height: 1.35; }
-
-.chips { margin-top: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
-.chip {
-  padding: 4px 8px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 12px;
+  border-color: rgba(122,162,255,0.85);
+  box-shadow: 0 0 0 3px rgba(122,162,255,0.18);
 }
 
-.detail { padding: 16px; overflow: auto; height: 100%; }
-.empty { color: var(--muted); padding: 14px; }
-
-.detailHeader { margin-bottom: 14px; }
-.detailHeader__title { margin: 0; font-size: 26px; letter-spacing: 0.2px; }
-.detailHeader__oneLiner { margin-top: 8px; color: var(--muted); line-height: 1.45; }
-
-.section { padding: 14px; border: 1px solid var(--line); border-radius: 16px; margin-bottom: 12px; background: rgba(255,255,255,0.02); }
-.section__title { margin: 0 0 10px 0; font-size: 14px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.8px; }
-.h3 { margin: 10px 0 8px 0; font-size: 13px; color: var(--text); }
-.muted { color: var(--muted); font-size: 13px; }
-
-.twoCols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (max-width: 1000px) {
-  .layout { grid-template-columns: 1fr; }
-  .twoCols { grid-template-columns: 1fr; }
+/* Selon navigateurs, les options peuvent ignorer une partie du style.
+   Mais ça améliore énormément sur Chrome/Edge/Firefox. */
+.select option {
+  background: #11131a; /* ton panel */
+  color: #e8eaf2;      /* ton texte */
 }
 
-.kv { display: grid; grid-template-columns: 180px 1fr; gap: 8px 12px; }
-.kv__k { color: var(--muted); font-size: 13px; }
-.kv__v { color: var(--text); font-size: 13px; }
-
-.ul { margin: 8px 0 0 18px; color: var(--text); }
-.ul li { margin: 6px 0; color: var(--text); }
-
-.cards { display: grid; gap: 10px; margin-top: 10px; }
-.card { border: 1px solid var(--line); border-radius: 14px; padding: 12px; background: rgba(0,0,0,0.15); }
-.card__title { font-weight: 750; margin-bottom: 6px; }
-.card__body { color: var(--muted); line-height: 1.45; font-size: 13px; }
-
-.pillRow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-.pill {
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  padding: 7px 10px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 13px;
+/* Option sélectionnée (état réel) -> bien visible */
+.select option:checked {
+  background: rgba(122,162,255,0.35);
+  color: #e8eaf2;
 }
-.pill:hover { border-color: rgba(122,162,255,0.45); }
 
-.footer {
-  padding: 12px 18px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 12px;
+/* Option survolée / focus (navigation clavier) -> cohérent visuellement
+   NB: support variable selon navigateur, mais pas destructif. */
+.select option:hover,
+.select option:focus {
+  background: rgba(122,162,255,0.25);
+  color: #e8eaf2;
+}
+
+/* Rend "Tous les tags" aussi lisible que le reste (pas d’effet “placeholder”) */
+.select option[value="all"] {
+  font-weight: 600;
 }
