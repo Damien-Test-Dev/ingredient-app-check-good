@@ -1,15 +1,54 @@
 import { el, clear } from "../utils/dom.js";
 
-function collectTags(index) {
-  const set = new Set();
-  for (const item of index) (item.tags ?? []).forEach((t) => set.add(t));
-  return ["all", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+const INTERNAL_TAGS = new Set(["placeholder", "a_completer", "encadrement"]);
+
+function formatTagLabel(tag) {
+  const map = {
+    gros_intestin: "Gros intestin",
+    superfood: "Superfood",
+    foie: "Foie",
+    rein: "Rein",
+    poumon: "Poumon",
+    yeux: "Yeux",
+    transit: "Transit",
+    jing: "Jing",
+    sang: "Sang",
+    yin: "Yin",
+    routine: "Routine"
+  };
+
+  if (map[tag]) return map[tag];
+
+  // Fallback lisible : "gros_intestin" -> "Gros intestin"
+  const pretty = String(tag).replace(/_/g, " ").trim();
+  return pretty.charAt(0).toUpperCase() + pretty.slice(1);
+}
+
+function collectTagsWithCounts(index) {
+  const counts = new Map();
+
+  for (const item of index) {
+    for (const t of item.tags ?? []) {
+      if (INTERNAL_TAGS.has(t)) continue;
+      counts.set(t, (counts.get(t) ?? 0) + 1);
+    }
+  }
+
+  const tags = Array.from(counts.entries()).map(([tag, count]) => ({
+    tag,
+    label: formatTagLabel(tag),
+    count
+  }));
+
+  // Tri par label (UX)
+  tags.sort((a, b) => a.label.localeCompare(b.label, "fr"));
+  return tags;
 }
 
 export function renderFilters({ root, state, onChange }) {
   clear(root);
 
-  const tags = collectTags(state.index);
+  const tags = collectTagsWithCounts(state.index);
 
   const search = el("input", {
     class: "input",
@@ -30,9 +69,15 @@ export function renderFilters({ root, state, onChange }) {
     }
   });
 
+  select.appendChild(el("option", { value: "all", text: "Tous les tags" }));
+
   for (const t of tags) {
     select.appendChild(
-      el("option", { value: t, text: t === "all" ? "Tous les tags" : t, selected: t === state.tag ? "true" : null })
+      el("option", {
+        value: t.tag,
+        text: `${t.label} (${t.count})`,
+        selected: t.tag === state.tag ? "true" : null
+      })
     );
   }
 
