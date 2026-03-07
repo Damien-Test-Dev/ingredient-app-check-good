@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingredient App</title>
 
-    <!-- IMPORTANT: compatible GitHub Pages (sans build) -->
-    <link rel="stylesheet" href="./src/styles.css" />
+    <!-- IMPORTANT: stylesheet au root (plus fiable en GitHub Pages) -->
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
@@ -28,9 +28,7 @@
 
       <section class="panel panel--right">
         <div id="detail" class="detail">
-          <div class="empty">
-            Sélectionne un ingrédient pour afficher la fiche.
-          </div>
+          <div class="empty">Sélectionne un ingrédient pour afficher la fiche.</div>
         </div>
       </section>
     </main>
@@ -39,7 +37,6 @@
       <span>⚠️ Informations éducatives. Pas un avis médical.</span>
     </footer>
 
-    <!-- IMPORTANT: chemin relatif pour GitHub Pages -->
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
